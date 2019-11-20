@@ -10,6 +10,9 @@ end
 gem 'rails', '~> 5.1.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '< 1.4'
+
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -33,15 +36,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Make errors better looking
-## ##gem 'better_errors', '~> 2.4'
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
 
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
 # Simple Form
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
+
+#gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,7 +59,11 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
 	gem 'guard', '~> 2.16', '>= 2.16.1'
 	#Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-	gem 'guard-livereload', '~> 2.5', '>= 2.5.2'  
+	gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false 
+  # Make errors better looking
+  ## ##gem 'better_errors', '~> 2.4'
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
