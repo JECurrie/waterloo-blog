@@ -48,6 +48,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.8.1)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -74,6 +76,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
+    debug_inspector (0.0.3)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -218,6 +221,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors (~> 2.5, >= 2.5.1)
+  binding_of_caller
   bootstrap-sass (~> 3.4, >= 3.4.1)
   bulma-rails (~> 0.8.0)
   byebug

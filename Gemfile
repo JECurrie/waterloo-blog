@@ -42,7 +42,7 @@ gem 'bulma-rails', '~> 0.8.0'
 
 # Simple Form
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
-
+gem "binding_of_caller" 
 #gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development, :test do
