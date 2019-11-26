@@ -1,5 +1,4 @@
-<% content_for :page_title, @post.title %>
-
+<h1 class="title">Show</h1>
 <section class="section">
 	<div class="container">
 		<nav class="level">
@@ -9,7 +8,6 @@
 					<strong>Actions</strong>
 				</p>
 			</div>
-
 			<!-- right side -->
 			<div class="level-right">
 				<p class="level-item">
@@ -19,7 +17,6 @@
 					<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "button is-danger" %>
 				</p>
 			</div>
-
 		</nav>
 		<hr />
 
@@ -29,5 +26,6 @@
 	</div>
 </section>
 
-<section class="comments"></section>
+<section class="section comments">
+</section>
 
